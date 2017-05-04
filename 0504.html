@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        .container {
+            width: 100%;
+            background-color: gray;
+            font-size: 0;
+            text-align: center;
+        }
+        
+        .box {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+/*            margin-left: -4px;*/
+            font-size: 16px;
+            overflow: hidden;
+            text-align: left;
+        }
+
+        nav ul {margin: 0;
+        padding: 0;}
+        
+        nav ul li {
+            float: left;
+            list-style: none;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            background-color: green;
+/*          padding: 15px;*/
+          padding: 0 15px;
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+        }
+        
+        .container1 {width: 600px;
+        height: 400px;
+        background-color: gray;
+        line-height: 400px;
+            text-align: center;
+        }
+        
+        .box1 { }
+        
+        .container2 {width: 600px;
+        height: 400px;
+        background-color: gray;
+        display: table;
+        }
+        
+        .box2 {
+            display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        }
+            
+        .container3 {
+            width: 600px;
+        height: 400px;
+        background-color: yellow;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+            font-size: 0;
+        }
+        
+        .container3::before {
+        display: inline-block;
+        vertical-align: middle;
+        content: "";
+        height: 100%;}
+        
+        .box3 {
+        display: inline-block;
+        vertical-align: middle;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+
+<body>
+    
+       <div class="container">
+        <div class="box">Suspend </div><!--
+    --> <div class="box">Suspend </div><!--
+    --> <div class="box">Suspend </div><!--
+    --> <div class="box">Suspend </div><!--
+    --> <div class="box">Suspend </div>
+    </div>
+    
+    <p></p>
+    
+<div class="container">
+        <div class="box">Overflow: hidden </div>
+        <div class="box">Overflow: hidden </div>
+        <div class="box">Overflow: hidden </div>
+        <div class="box">Overflow: hidden </div>
+        <div class="box">Overflow: hidden </div>
+    </div>
+    
+    
+     <nav>
+          <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+      </nav>
+      
+<!--
+      <div class="container1">
+         <div class="box1">Container 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur est reprehenderit, neque enim libero nesciunt possimus quasi veniam hic quia! Architecto at commodi, accusantium accusamus, maxime fugiat necessitatibus sint voluptatem.</div> 
+      </div>
+-->
+     
+      <div class="container2">
+         <div class="box2">Container 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur est reprehenderit, neque enim libero nesciunt possimus quasi veniam hic quia! Architecto at commodi, accusantium accusamus, maxime fugiat necessitatibus sint voluptatem.</div> 
+      </div>
+      
+    <div class="container3">
+         <div class="box3">Container 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repellendus quibusdam aspernatur ex, mollitia maxime dignissimos similique. Aut, placeat. Reprehenderit optio vel rerum maxime, nisi placeat magnam quos possimus consequuntur.</div> 
+      </div>
+</body>
+
+</html>
